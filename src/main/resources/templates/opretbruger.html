@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> KnowYourWaste </title>
+
+    <link rel="icon" href="https://i.imgur.com/GAoX0k6.png" type="image/png"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="KnowYourWaste er en side for forretninger, der ønsker at mindske deres madspild"/>
+
+    <!-- css-filer -->
+    <link href="/opretbruger.css" type="text/css" rel="stylesheet">
+
+    <!-- bootstraaaaap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- font-family: 'Quicksand', sans-serif; -->
+
+</head>
+<body>
+<div class="indexwrapper">
+
+    <div class="indexlogo">
+
+        <img class="indexlogo" src="https://i.imgur.com/wgDrCip.png" alt="Know_Your_Waste_logo.png">
+
+    </div>
+    <div class="container font">
+        <div class="row">
+            <!-- Kolonne til inputfelt -->
+            <div class="col">
+                <div id="form-container">
+                    <!-- Dette er en form
+                    Vi laver @PostMapping("/login") i Controlleren for at lave et endpoint - pga. denne form -->
+                    <form id="opretbruger-form" action="/opretbruger" method="post">
+                        <h5 class="loginformheadline">Opret bruger</h5>
+                        <!--<input> Laver input-felt
+                        type="text" == typen af input der tages imod i inputfeltet
+                        id="brugernavn" == Kalder bestemt styling vi har i css-filen
+                        name="brugernavninput" == giver inputtet vi får ind referencenavnet, catfact -->
+
+                        <input type="text" id="brugernavn" name="brugernavninput" placeholder="Brugernavn" required class="color"><br><br>
+
+                        <input type="text" id="email" name="emailinput" placeholder="E-mail" required class="color"><br><br>
+
+                        <input type="text" id="adgangskode" name="adgangskodeinput" placeholder="Adgangskode" required class="color"><br><br>
+
+                        <input type="text" id="bekræftadgangskode" name="bekræftadgangskodeinput" placeholder="Bekræft adgangskode" required class="color"><br><br>
+
+                        <a href="/" class="tilbagetillogind">Tilbage til log ind</a>
+                        <!--<input type="submit" value=<a href="/opretBruger"> class="opretbrugerbutton">-->
+
+                        <input type="submit" value="Opret bruger" class="submitbutton">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

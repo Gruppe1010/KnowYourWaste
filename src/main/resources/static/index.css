@@ -1,0 +1,117 @@
+body
+{
+    margin: 0;
+    background-image: url("https://i.imgur.com/iFOwF0k.png");
+    font-family: 'Quicksand', serif;
+}
+
+.indexlogo
+{
+    position: relative;
+    padding-top: 30px;
+    width: 650px;
+    margin: auto;
+}
+
+.color
+{
+    background-color: #F0FEE8;
+}
+#form-container
+{
+    padding-top:70px;
+    width: 500px;
+    margin: auto;
+}
+
+#login-form
+{
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    border: 3px solid;
+    border-radius: 15px;
+    height: 310px;
+}
+
+.loginformheadline
+{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.opretbruger
+{
+    position: relative;
+    display: inline;
+    float: left;
+
+    background-color: #D1CDCD;
+    border: 2px solid;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a.opretbruger:link
+{
+    color: black;
+    border-color: black;
+    text-decoration: none;
+}
+a.opretbruger:hover
+{
+    color: black;
+}
+a.opretbruger:visited
+{
+    color: black;
+}
+
+.submitbutton
+{
+    position: relative;
+    display: inline;
+    float: right;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+#brugernavn
+{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    border-color: black;
+    line-height: 40px;
+    padding-left: 10px;
+
+}
+
+#adgangskode
+{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    border-color: black;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #B6DFC0;
+    border: 2px solid;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
