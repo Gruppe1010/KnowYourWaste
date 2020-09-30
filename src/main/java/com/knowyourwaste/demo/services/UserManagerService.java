@@ -16,20 +16,21 @@ public class UserManagerService
         // TODO: KALD METODE DER OPDATERER EKSPORT
     }
     
-    public boolean checkLogInInfo(String username, String password)
+    public User checkLogInInfo(String username, String password)
     {
+        User nullUser = null;
         for(User user : userList)
         {
             if(user.getUsername().equals(username)) // hvis usernamet-param findes på listen
             {
                 if(user.getPassword().equals(password)) // hvis passwordet  på det u-obj matcher password-param
                 {
-                    return true;
+                    return user;
                 }
                
             }
         }
-        return false;
+        return nullUser;
         
     }
     

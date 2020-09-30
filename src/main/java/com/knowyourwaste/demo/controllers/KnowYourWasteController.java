@@ -1,22 +1,24 @@
 package com.knowyourwaste.demo.controllers;
 
+import com.knowyourwaste.demo.models.User;
 import com.knowyourwaste.demo.services.UserManagerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.context.request.WebRequest;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 
 @Controller
 public class KnowYourWasteController
 {
     UserManagerService userManagerService = new UserManagerService(); //
+    User loggedInUser = null;
 
     @GetMapping("/")
     public String index()
     {
+        loggedInUser = null; //Så den nulstiller ved log ud
         return "index";
     }
     
@@ -33,11 +35,12 @@ public class KnowYourWasteController
         
          */
     
-        boolean islogInInfoValid = userManagerService.checkLogInInfo(dataFromLogInForm.getParameter("usernameinput"),
+        User user = userManagerService.checkLogInInfo(dataFromLogInForm.getParameter("usernameinput"),
                 dataFromLogInForm.getParameter("passwordinput"));
         
-        if(islogInInfoValid == true)
+        if(user!=null)
         {
+            loggedInUser = user;
             return "redirect:/frontPage"; // HTML
         }
         
@@ -84,16 +87,16 @@ public class KnowYourWasteController
         
          */ // Funktion til at den tjekker om password og bekræftpassword er ens
         
-        return "redirect:/createWasteList";
+        return "redirect:/createWasteListTemplate";
     }
     
-    @GetMapping("/createWasteList") // URL
+    @GetMapping("/createWasteListTemplate") // URL
     public String createWasteList()
     {
-        return "createwastelist"; // HTML
+        return "createwastelisttemplate"; // HTML
     }
     
-    @PostMapping("/postCreateWasteList") // form-action
+    @PostMapping("/postCreateWasteListTemplate") // form-action
     public String postCreateWasteList(WebRequest dataCreateWasteListForm)
     {
         ArrayList<String> stringList = new ArrayList<>();
@@ -107,7 +110,7 @@ public class KnowYourWasteController
         
         userManagerService.createWasteList(stringList);
         
-        return "redirect:/frontpage"; // HTML
+        return "redirect:/frontPage"; // URL
     }
     
     

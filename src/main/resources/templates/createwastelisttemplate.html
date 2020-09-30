@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title> KnowYourWaste </title>
+    <title> Know Your Waste </title>
 
     <link rel="icon" href="https://i.imgur.com/GAoX0k6.png" type="image/png"/>
     <meta charset="utf-8"/>
     <meta name="description" content="KnowYourWaste er en side for forretninger, der ønsker at mindske deres madspild"/>
 
     <!-- css-filer -->
-    <link href="/createwastelist.css" type="text/css" rel="stylesheet">
+    <link href="/createwastelisttemplate.css" type="text/css" rel="stylesheet">
 
     <!-- bootstraaaaap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -32,7 +32,7 @@
                 <div id="form-container">
                     <!-- Dette er en form
                     Vi laver @PostMapping("/logind") i Controlleren for at lave et endpoint - pga. denne form -->
-                    <form id="login-form" action="/postCreateWasteList" method="post">
+                    <form id="login-form" action="/postCreateWasteListTemplate" method="post">
                         <h5 class="loginformheadline">Vælg sortiment til lukkeliste</h5>
 
                         <input type="checkbox" id="bread" name="bread" value="Bread">
