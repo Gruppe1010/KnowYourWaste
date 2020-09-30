@@ -31,9 +31,9 @@
             <div class="col">
                 <div id="form-container">
                     <!-- Dette er en form
-                    Vi laver @PostMapping("/login") i Controlleren for at lave et endpoint - pga. denne form -->
+                    Vi laver @PostMapping("/opretbruger") i Controlleren for at lave et endpoint - pga. denne form -->
                     <form id="opretbruger-form" action="/opretbruger" method="post">
-                        <h5 class="loginformheadline">Opret bruger</h5>
+                        <h5 class="opretbrugerformheadline">Opret bruger</h5>
                         <!--<input> Laver input-felt
                         type="text" == typen af input der tages imod i inputfeltet
                         id="brugernavn" == Kalder bestemt styling vi har i css-filen
@@ -50,7 +50,7 @@
                         <a href="/" class="tilbagetillogind">Tilbage til log ind</a>
                         <!--<input type="submit" value=<a href="/opretBruger"> class="opretbrugerbutton">-->
 
-                        <input type="submit" value="Opret bruger" class="submitbutton">
+                        <input type="submit" value="Opret bruger" class="submit">
                     </form>
                 </div>
             </div>

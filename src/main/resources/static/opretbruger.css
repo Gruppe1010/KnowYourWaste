@@ -34,7 +34,7 @@ body
     height: 450px;
 }
 
-.loginformheadline
+.opretbrugerformheadline
 {
     font-size: 30px;
     text-align: center;
@@ -50,6 +50,8 @@ body
     background-color: #D1CDCD;
     border: 2px solid;
     border-radius: 5px;
+
+    font-size: 15px;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
@@ -65,14 +67,14 @@ a.tilbagetillogind:link
 }
 a.tilbagetillogind:hover
 {
-    color: black;
+    background-color: #BCBDBC;
 }
 a.tilbagetillogind:visited
 {
     color: black;
 }
 
-.submitbutton
+.submit
 {
     position: relative;
     display: inline;
@@ -81,13 +83,25 @@ a.tilbagetillogind:visited
     padding-bottom: 5px;
 }
 
+input[type=submit]:hover
+{
+    background-color:#B6DFC0;
+    border-color: black;
+}
+input[type=text]:hover
+{
+    background-color: #B6DFC0;
+}
+
 #brugernavn
 {
     position: relative;
     width: 100%;
-    border-radius: 5px;
-    font-size: 20px;
+
     border-color: black;
+    border-radius: 5px;
+
+    font-size: 15px;
     line-height: 40px;
     padding-left: 10px;
 }
@@ -95,9 +109,11 @@ a.tilbagetillogind:visited
 {
     position: relative;
     width: 100%;
-    border-radius: 5px;
-    font-size: 20px;
+
     border-color: black;
+    border-radius: 5px;
+
+    font-size: 15px;
     line-height: 40px;
     padding-left: 10px;
 }
@@ -106,9 +122,11 @@ a.tilbagetillogind:visited
 {
     position: relative;
     width: 100%;
-    border-radius: 5px;
-    font-size: 20px;
+
     border-color: black;
+    border-radius: 5px;
+
+    font-size: 15px;
     line-height: 40px;
     padding-left: 10px;
 }
@@ -116,16 +134,18 @@ a.tilbagetillogind:visited
 {
     position: relative;
     width: 100%;
-    border-radius: 5px;
-    font-size: 20px;
+
     border-color: black;
+    border-radius: 5px;
+
+    font-size: 15px;
     line-height: 40px;
     padding-left: 10px;
 }
 
 
 input[type=button], input[type=submit], input[type=reset] {
-    background-color: #B6DFC0;
+    background-color: #F0FEE8;
     border: 2px solid;
     border-radius: 5px;
     color: black;
