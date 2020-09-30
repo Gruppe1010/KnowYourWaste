@@ -10,6 +10,7 @@ public class User implements Serializable
     private String username;
     private String email;
     private String password;
+    private WasteList userWastListTemplate;
     private ArrayList<WasteList> wasteListArray;
     
     private static final long serialVersionUID = 1234L;
@@ -24,6 +25,14 @@ public class User implements Serializable
     }
     
     // Getters + setters
+    public WasteList getUserWastListTemplate()
+    {
+        return userWastListTemplate;
+    }
+    public void setUserWastListTemplate(WasteList userWastListTemplate)
+    {
+        this.userWastListTemplate = userWastListTemplate;
+    }
     public String getUsername()
     {
         return username;

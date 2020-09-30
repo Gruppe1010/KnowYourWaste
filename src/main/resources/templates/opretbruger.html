@@ -32,7 +32,7 @@
                 <div id="form-container">
                     <!-- Dette er en form
                     Vi laver @PostMapping("/opretbruger") i Controlleren for at lave et endpoint - pga. denne form -->
-                    <form id="opretbruger-form" action="/opretbruger" method="post">
+                    <form id="opretbruger-form" action="/postOpretBruger" method="post">
                         <h5 class="opretbrugerformheadline">Opret bruger</h5>
                         <!--<input> Laver input-felt
                         type="text" == typen af input der tages imod i inputfeltet
@@ -43,9 +43,9 @@
 
                         <input type="text" id="email" name="emailinput" placeholder="E-mail" required class="color"><br><br>
 
-                        <input type="text" id="adgangskode" name="adgangskodeinput" placeholder="Adgangskode" required class="color"><br><br>
+                        <input type="password" id="adgangskode" name="adgangskodeinput" placeholder="Adgangskode" required class="color"><br><br>
 
-                        <input type="text" id="bekræftadgangskode" name="bekræftadgangskodeinput" placeholder="Bekræft adgangskode" required class="color"><br><br>
+                        <input type="password" id="bekræftadgangskode" name="bekræftadgangskodeinput" placeholder="Bekræft adgangskode" required class="color"><br><br>
 
                         <a href="/" class="tilbagetillogind">Tilbage til log ind</a>
                         <!--<input type="submit" value=<a href="/opretBruger"> class="opretbrugerbutton">-->
