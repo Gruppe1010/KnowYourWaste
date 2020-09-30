@@ -96,22 +96,16 @@ public class KnowYourWasteController
     @PostMapping("/postCreateWasteList") // form-action
     public String postCreateWasteList(WebRequest dataCreateWasteListForm)
     {
-    
-        dataCreateWasteListForm.getParameter("passwordinput")
-        
-        
         ArrayList<String> stringList = new ArrayList<>();
         
-        if()
-        {
-            stringList.add();
-        }
-        stringList.add();
-    
+        stringList.add(dataCreateWasteListForm.getParameter("Bread"));
+        stringList.add(dataCreateWasteListForm.getParameter("Ryebread"));
+        stringList.add(dataCreateWasteListForm.getParameter("Spandauer"));
+        stringList.add(dataCreateWasteListForm.getParameter("Cake"));
+        stringList.add(dataCreateWasteListForm.getParameter("Othellocake"));
+        stringList.add(dataCreateWasteListForm.getParameter("Rumcake"));
+        
         userManagerService.createWasteList(stringList);
-    
-        dataCreateWasteListForm.getParameter("ryebread"); // ryebread == name
-        dataCreateWasteListForm.getParameter("bread"); // ryebread == name
         
         return "redirect:/frontpage"; // HTML
     }

@@ -3,6 +3,7 @@ package com.knowyourwaste.demo.services;
 import com.knowyourwaste.demo.models.User;
 import com.knowyourwaste.demo.models.WasteList;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class UserManagerService
@@ -34,10 +35,22 @@ public class UserManagerService
     
     public void createWasteList(ArrayList<String> stringList)
     {
+        ArrayList<String> stringListToSet = new ArrayList<>();
+        for(String string : stringList)
+        {
+            if(string!=null)
+            {
+                stringListToSet.add(string);
+            }
+        }
     
-        userList.get(userList.size()-1).setUserWasteListTemplate(stringList);
+        for(String string : stringList)
+        {
+            System.out.println(string);
+        }
         
-        //userList.get(userList.size()-1).setUserWasteListTemplate(new WasteList(stringList));
+        userList.get(userList.size()-1).setUserWasteListTemplate(stringListToSet);
+        
     }
     
     

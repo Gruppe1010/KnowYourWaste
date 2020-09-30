@@ -35,28 +35,16 @@
                     <form id="login-form" action="/postCreateWasteList" method="post">
                         <h5 class="loginformheadline">Vælg sortiment til lukkeliste</h5>
 
-                        th:for
-                        <p th:each="item : ${itemList}" class="twit">
-
-                            <input type="checkbox" id="item" name="item" value="Bread">
-                            <label class="checkboxlabel" for="item">  </label><br>
-
-
-                            <span th:text="${twit.getTwitTextWithCitation()}" class="twittext"></span><br>
-                            <span th:text="${twit.getAuthorWithAt()}" class="twitauthoranddate"> </span>
-                            <span th:text="${twit.getFormattedCreationDate()}" class="twitauthoranddate"> </span>
-                        </p>
-                        <!--
                         <input type="checkbox" id="bread" name="bread" value="Bread">
                         <label class="checkboxlabel" for="bread"> Franskbrød</label><br>
 
                         <input type="checkbox" id="ryebread" name="ryebread" value="Ryebread">
                         <label class="checkboxlabel"  for="ryebread"> Rugbrød</label><br>
 
-                        <input type="checkbox" id="spandauer" name="ryebread" value="Spandauer">
+                        <input type="checkbox" id="spandauer" name="spandauer" value="Spandauer">
                         <label class="checkboxlabel"  for="spandauer"> Spandauer</label><br>
 
-                        <input type="checkbox" id="cake" name="ryebread" value="Cake">
+                        <input type="checkbox" id="cake" name="cake" value="Cake">
                         <label class="checkboxlabel" for="cake"> Kajkage</label><br>
 
                         <input type="checkbox" id="othellocake" name="othellocake" value="Othellocake">
@@ -64,7 +52,7 @@
 
                         <input type="checkbox" id="rumcake" name="rumcake" value="Rumcake">
                         <label class="checkboxlabel" for="rumcake"> Romkugle</label><br><br>
-                        -->
+
 
                         <!-- HER SKAL DER INDSÆTTES INDTASTNINGFELT TIL FLERE VARER -->
 
