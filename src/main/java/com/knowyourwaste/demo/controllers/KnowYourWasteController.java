@@ -85,13 +85,13 @@ public class KnowYourWasteController
         return "/opretBruger"; // muligvis: "redirect:/opretBruger" - returner samme side + print besked om password
         // ikke matcher
         
-         */ // Funktion til at den tjekker om password og bekræftpassword er ens
+         */ // SLET IKKE - Funktion til at den tjekker om password og bekræftpassword er ens
         
         return "redirect:/createWasteListTemplate";
     }
     
     @GetMapping("/createWasteListTemplate") // URL
-    public String createWasteList()
+    public String createWasteListTemplate()
     {
         return "createwastelisttemplate"; // HTML
     }
@@ -111,6 +111,18 @@ public class KnowYourWasteController
         userManagerService.createWasteList(stringList);
         
         return "redirect:/frontPage"; // URL
+    }
+    
+    @GetMapping("/createWasteList") // URL
+    public String createWasteList()
+    {
+        return "createwastelist"; // HTML
+    }
+    
+    @GetMapping("/statistics") // URL
+    public String statistics()
+    {
+        return "statistics"; // HTML
     }
     
     
