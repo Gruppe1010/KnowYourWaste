@@ -22,13 +22,11 @@ public class UserManagerService
             {
                 if(user.getPassword().equals(password)) // hvis passwordet  på det u-obj matcher password-param
                 {
-                    System.out.println("Useren findes");
                     return true;
                 }
                
             }
         }
-        System.out.println("useren findes ikkef");
         return false;
         
     }

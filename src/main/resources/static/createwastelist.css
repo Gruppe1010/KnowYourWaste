@@ -5,6 +5,11 @@ body
     font-family: 'Quicksand', serif;
 }
 
+.infobox
+{
+    position: sticky;
+}
+
 .logo
 {
     position: relative;
@@ -17,31 +22,32 @@ body
 {
     background-color: #F0FEE8;
 }
-
 #form-container
 {
+    position: relative;
+    float: left;
     padding-top:70px;
     width: 500px;
-    margin: auto;
+
 }
 
-#createuser-form
+#login-form
 {
     background-color: white;
     padding: 20px 30px 20px 30px;
     border: 3px solid;
     border-radius: 15px;
-    height: 420px;
+    height: 310px;
 }
 
-.createuser-formheadline
+.loginformheadline
 {
     font-size: 30px;
     text-align: center;
     padding-bottom: 20px;
 }
 
-.returntologin
+.createuser
 {
     position: relative;
     display: inline;
@@ -50,26 +56,23 @@ body
     background-color: #D1CDCD;
     border: 2px solid;
     border-radius: 5px;
-
-    font-size: 15px;
-    color: black;
     padding: 10px 20px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
 }
 
-a.returntologin:link
+a.createuser:link
 {
     color: black;
     border-color: black;
     text-decoration: none;
 }
-a.returntologin:hover
+a.createuser:hover
 {
     background-color: #BCBDBC;
 }
-a.returntologin:visited
+a.createuser:visited
 {
     color: black;
 }
@@ -92,10 +95,6 @@ input[type=text]:hover
 {
     background-color: #B6DFC0;
 }
-input[type=password]:hover
-{
-    background-color: #B6DFC0;
-}
 
 #username
 {
@@ -103,23 +102,11 @@ input[type=password]:hover
     width: 100%;
 
     border-color: black;
-    border-radius: 5px;
+    border-radius: 5px; /*For afrundede kanter på border*/
 
     font-size: 15px;
-    line-height: 40px;
-    padding-left: 10px;
-}
-#email
-{
-    position: relative;
-    width: 100%;
-
-    border-color: black;
-    border-radius: 5px;
-
-    font-size: 15px;
-    line-height: 40px;
-    padding-left: 10px;
+    line-height: 40px; /*For luft om bogstaver*/
+    padding-left: 10px; /*For luft om bogstaver*/
 }
 
 #password
@@ -134,39 +121,16 @@ input[type=password]:hover
     line-height: 40px;
     padding-left: 10px;
 }
-#confirmpassword
-{
-    position: relative;
-    width: 100%;
-
-    border-color: black;
-    border-radius: 5px;
-
-    font-size: 15px;
-    line-height: 40px;
-    padding-left: 10px;
-}
 
 
-input[type=submit]
-{
+input[type=button], input[type=submit], input[type=reset] {
     background-color: #F0FEE8;
+    font-size: 15px;
     border: 2px solid;
     border-radius: 5px;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     margin: 4px 2px;
-    cursor: pointer;
-}
-
-input[type=password]
-{
-    background-color: #F0FEE8;
-    font-size: 15px;
-    border: 2px solid;
-    border-radius: 5px;
-    color: black;
-    text-decoration: none;
     cursor: pointer;
 }

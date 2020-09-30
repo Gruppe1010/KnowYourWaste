@@ -18,7 +18,46 @@
 
 </head>
 <body>
-<p>PIZZA TID!!!!</p>
+<div class="indexwrapper">
+
+    <div class="logo">
+
+        <img class="logo" src="https://i.imgur.com/wgDrCip.png" alt="Know_Your_Waste_logo.png">
+
+    </div>
+    <div class="container font">
+        <div class="row">
+            <!-- Kolonne til inputfelt -->
+            <div class="col">
+                <div id="form-container">
+                    <!-- Dette er en form
+                    Vi laver @PostMapping("/logind") i Controlleren for at lave et endpoint - pga. denne form -->
+                    <form id="login-form" action="/postLogIn" method="post">
+                        <h5 class="loginformheadline">Log ind</h5>
+                        <!--<input> Laver input-felt
+                        type="text" == typen af input der tages imod i inputfeltet
+                        id="brugernavn" == Kalder bestemt styling vi har i css-filen
+                        name="brugernavninput" == giver inputtet vi får ind referencenavnet, catfact -->
+
+                        <input type="text" id="username" name="usernameinput" placeholder="Brugernavn" required class="color"><br><br>
+
+                        <input type="password" id="password" name="passwordinput" placeholder="Adgangskode" required  class="color"><br><br>
+
+                        <a href="/createUser" class="createuser">Opret bruger</a>
+
+                        <input type="submit" value="Log ind" class="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="col">
+                <div class="infobox">
+                    <!--Her er vores info-boks -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 

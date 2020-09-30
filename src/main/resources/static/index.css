@@ -88,6 +88,10 @@ input[type=text]:hover
 {
     background-color: #B6DFC0;
 }
+input[type=password]:hover
+{
+    background-color: #B6DFC0;
+}
 
 #username
 {
@@ -115,8 +119,8 @@ input[type=text]:hover
     padding-left: 10px;
 }
 
-
-input[type=button], input[type=submit], input[type=reset] {
+input[type=submit]
+{
     background-color: #F0FEE8;
     font-size: 15px;
     border: 2px solid;
@@ -125,5 +129,16 @@ input[type=button], input[type=submit], input[type=reset] {
     padding: 10px 20px;
     text-decoration: none;
     margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=password]
+{
+    background-color: #F0FEE8;
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
     cursor: pointer;
 }

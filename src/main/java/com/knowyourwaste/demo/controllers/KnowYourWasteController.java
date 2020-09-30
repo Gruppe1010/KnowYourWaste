@@ -84,7 +84,7 @@ public class KnowYourWasteController
         return "redirect:/createWasteList";
     }
     
-    @GetMapping("/createwastelist") // URL
+    @GetMapping("/createWasteList") // URL
     public String createWasteList()
     {
         return "createwastelist"; // HTML
