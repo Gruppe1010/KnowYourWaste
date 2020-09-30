@@ -1,0 +1,39 @@
+body
+{
+    margin: 0;
+    font-family: 'Quicksand', serif;
+}
+
+.topbarwrapper
+{
+    position: relative;
+    text-align: center;
+}
+
+.topbarlogo
+{
+    font-family: 'Tangerine', serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: grey;
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+
+.topbarpicture1
+{
+    position: absolute; /* gør at teksten står relativt ift. .topbarwrapper*/
+    display: inline; /* = elementet er inline med de andre elementer*/
+    left: 0; /*for position er absolute, bestemmer man positionen relativt til det element den er inde i */
+    height: 100%; /* fordi den skal udfylde 100% af topbarwrapperen*/
+
+}
+
+.topbarpicture2
+{
+    position: absolute;
+    display: inline;
+    right: 0;
+    height: 100%;
+
+}
