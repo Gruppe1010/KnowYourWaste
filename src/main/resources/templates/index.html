@@ -32,18 +32,18 @@
                 <div id="form-container">
                     <!-- Dette er en form
                     Vi laver @PostMapping("/logind") i Controlleren for at lave et endpoint - pga. denne form -->
-                    <form id="login-form" action="/logind" method="post">
+                    <form id="login-form" action="/postLogIn" method="post">
                         <h5 class="loginformheadline">Log ind</h5>
                         <!--<input> Laver input-felt
                         type="text" == typen af input der tages imod i inputfeltet
                         id="brugernavn" == Kalder bestemt styling vi har i css-filen
                         name="brugernavninput" == giver inputtet vi får ind referencenavnet, catfact -->
 
-                        <input type="text" id="brugernavn" name="brugernavninput" placeholder="Brugernavn" required class="color"><br><br>
+                        <input type="text" id="username" name="usernameinput" placeholder="Brugernavn" required class="color"><br><br>
 
-                        <input type="text" id="adgangskode" name="adgangskodeinput" placeholder="Adgangskode" required  class="color"><br><br>
+                        <input type="password" id="password" name="passwordinput" placeholder="Adgangskode" required  class="color"><br><br>
 
-                        <a href="/opretBruger" class="opretbruger">Opret bruger</a>
+                        <a href="/createUser" class="createuser">Opret bruger</a>
 
                         <input type="submit" value="Log ind" class="submit">
                     </form>

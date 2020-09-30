@@ -1,27 +1,24 @@
 package com.knowyourwaste.demo.controllers;
 
-import com.knowyourwaste.demo.UserManager;
-import com.knowyourwaste.demo.models.User;
+import com.knowyourwaste.demo.services.UserManagerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.context.request.WebRequest;
 
-import java.util.Date;
-
 @Controller
 public class KnowYourWasteController
 {
-    UserManager userManager = new UserManager();
-    
+    UserManagerService userManagerService = new UserManagerService(); //
+
     @GetMapping("/")
     public String index()
     {
         return "index";
     }
     
-    @PostMapping("/logind")
-    public String postTwit(WebRequest dataFromTwitForm)
+    @PostMapping("/postLogIn") // form-action
+    public String postLogIn(WebRequest dataFromLogInForm)
     {
         /* tjek om data fra twitform stemmer overens med Arraylisten userList
         
@@ -32,20 +29,38 @@ public class KnowYourWasteController
         return "frontpage"; //
         
          */
+    
+        boolean islogInInfoValid = userManagerService.checkLogInInfo(dataFromLogInForm.getParameter("usernameinput"),
+                dataFromLogInForm.getParameter("passwordinput"));
         
-        return "frontpage";
+        if(islogInInfoValid == true)
+        {
+            return "redirect:/frontPage"; // HTML
+        }
         
+        // else - den er false
+        return "redirect:/";
+    }
+    @GetMapping("/frontPage") // URL
+    public String frontPage()
+    {
+        return "frontpage"; // HTML
     }
     
-    @GetMapping("/opretBruger") // URL
-    public String opretBruger()
+    @GetMapping("/createUser") // URL
+    public String createUser()
     {
-        return "/opretbruger";// HTML
+        return "createuser";// HTML
     }
     
-    @PostMapping("/postOpretBruger")
-    public String postOpretBruger(WebRequest dataFromOpretBrugerForm)
+    @PostMapping("/postCreateUser")
+    public String postCreateUser(WebRequest dataFromCreateUserForm)
     {
+    
+        userManagerService.createAndAddUserToUserList(dataFromCreateUserForm.getParameter("usernameinput"),
+                dataFromCreateUserForm.getParameter("emailinput"),
+                dataFromCreateUserForm.getParameter("passwordinput"));
+        
         /*
         String password = dataFromOpretBrugerForm.getParameter("adgangskodeinput");
         String bekræftPassword = dataFromOpretBrugerForm.getParameter("bekræftadgangskodeinput");
@@ -65,18 +80,14 @@ public class KnowYourWasteController
         // ikke matcher
         
          */ // Funktion til at den tjekker om password og bekræftpassword er ens
-    
-        userManager.addUserToUserList(new User(dataFromOpretBrugerForm.getParameter("usernameinput"),
-                dataFromOpretBrugerForm.getParameter("emailinput"),
-                dataFromOpretBrugerForm.getParameter("adgangskodeinput")));
-    
-        return "redirect:/opretLukkeliste";
+        
+        return "redirect:/createWasteList";
     }
     
-    @GetMapping("/opretLukkeliste") // URL
-    public String opretLukkeliste()
+    @GetMapping("/createwastelist") // URL
+    public String createWasteList()
     {
-        return "opretlukkeliste"; // HTML
+        return "createwastelist"; // HTML
     }
     
     

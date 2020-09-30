@@ -5,7 +5,7 @@ body
     font-family: 'Quicksand', serif;
 }
 
-.indexlogo
+.logo
 {
     position: relative;
     padding-top: 30px;
@@ -25,7 +25,7 @@ body
     margin: auto;
 }
 
-#opretbruger-form
+#createuser-form
 {
     background-color: white;
     padding: 20px 30px 20px 30px;
@@ -34,14 +34,14 @@ body
     height: 450px;
 }
 
-.opretbrugerformheadline
+.createuser-formheadline
 {
     font-size: 30px;
     text-align: center;
     padding-bottom: 20px;
 }
 
-.tilbagetillogind
+.returntologin
 {
     position: relative;
     display: inline;
@@ -59,17 +59,17 @@ body
     cursor: pointer;
 }
 
-a.tilbagetillogind:link
+a.returntologin:link
 {
     color: black;
     border-color: black;
     text-decoration: none;
 }
-a.tilbagetillogind:hover
+a.returntologin:hover
 {
     background-color: #BCBDBC;
 }
-a.tilbagetillogind:visited
+a.returntologin:visited
 {
     color: black;
 }
@@ -93,7 +93,7 @@ input[type=text]:hover
     background-color: #B6DFC0;
 }
 
-#brugernavn
+#username
 {
     position: relative;
     width: 100%;
@@ -118,7 +118,7 @@ input[type=text]:hover
     padding-left: 10px;
 }
 
-#adgangskode
+#password
 {
     position: relative;
     width: 100%;
@@ -130,7 +130,7 @@ input[type=text]:hover
     line-height: 40px;
     padding-left: 10px;
 }
-#bekræftadgangskode
+#confirmpassword
 {
     position: relative;
     width: 100%;

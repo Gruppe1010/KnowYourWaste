@@ -40,7 +40,7 @@ body
     padding-bottom: 20px;
 }
 
-.opretbruger
+.createuser
 {
     position: relative;
     display: inline;
@@ -55,17 +55,17 @@ body
     cursor: pointer;
 }
 
-a.opretbruger:link
+a.createuser:link
 {
     color: black;
     border-color: black;
     text-decoration: none;
 }
-a.opretbruger:hover
+a.createuser:hover
 {
     background-color: #BCBDBC;
 }
-a.opretbruger:visited
+a.createuser:visited
 {
     color: black;
 }
@@ -89,7 +89,7 @@ input[type=text]:hover
     background-color: #B6DFC0;
 }
 
-#brugernavn
+#username
 {
     position: relative;
     width: 100%;
@@ -102,7 +102,7 @@ input[type=text]:hover
     padding-left: 10px; /*For luft om bogstaver*/
 }
 
-#adgangskode
+#password
 {
     position: relative;
     width: 100%;
