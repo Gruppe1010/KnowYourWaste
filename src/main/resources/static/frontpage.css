@@ -1,0 +1,27 @@
+.textbox-container
+{
+    padding-top:70px;
+    width: 500px;
+    margin: auto;
+}
+
+.frontpage-textbox
+{
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    border: 3px solid;
+    border-radius: 15px;
+    margin-bottom: 70px;
+}
+
+.textboxheadline
+{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.textboxcontent
+{
+    font-size: 20px;
+}
