@@ -4,9 +4,9 @@ body
     font-family: 'Quicksand', serif;
 }
 
-.wrapper
+.logomountains
 {
-    width: 100%;
+   max-width: 100%;
 }
 
 .menubar
