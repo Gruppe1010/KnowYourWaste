@@ -1,6 +1,7 @@
 package com.knowyourwaste.demo.services;
 
 import com.knowyourwaste.demo.models.User;
+import com.knowyourwaste.demo.models.WasteList;
 
 import java.util.ArrayList;
 
@@ -31,7 +32,13 @@ public class UserManagerService
         
     }
     
+    public void createWasteList(ArrayList<String> stringList)
+    {
     
+        userList.get(userList.size()-1).setUserWasteListTemplate(stringList);
+        
+        //userList.get(userList.size()-1).setUserWasteListTemplate(new WasteList(stringList));
+    }
     
     
     

@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.context.request.WebRequest;
 
+import javax.annotation.PostConstruct;
+import java.util.ArrayList;
+
 @Controller
 public class KnowYourWasteController
 {
@@ -53,7 +56,7 @@ public class KnowYourWasteController
         return "createuser";// HTML
     }
     
-    @PostMapping("/postCreateUser")
+    @PostMapping("/postCreateUser") // form-action
     public String postCreateUser(WebRequest dataFromCreateUserForm)
     {
     
@@ -88,6 +91,29 @@ public class KnowYourWasteController
     public String createWasteList()
     {
         return "createwastelist"; // HTML
+    }
+    
+    @PostMapping("/postCreateWasteList") // form-action
+    public String postCreateWasteList(WebRequest dataCreateWasteListForm)
+    {
+    
+        dataCreateWasteListForm.getParameter("passwordinput")
+        
+        
+        ArrayList<String> stringList = new ArrayList<>();
+        
+        if()
+        {
+            stringList.add();
+        }
+        stringList.add();
+    
+        userManagerService.createWasteList(stringList);
+    
+        dataCreateWasteListForm.getParameter("ryebread"); // ryebread == name
+        dataCreateWasteListForm.getParameter("bread"); // ryebread == name
+        
+        return "redirect:/frontpage"; // HTML
     }
     
     

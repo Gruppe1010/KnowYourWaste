@@ -16,6 +16,12 @@ public class Item implements Serializable
         this.wasteNumber = wasteNumber;
     }
     
+    public Item(String name)
+    {
+        this.name = name;
+        wasteNumber = 0;
+    }
+    
     // getters + setters
     public String getName()
     {

@@ -32,20 +32,46 @@
                 <div id="form-container">
                     <!-- Dette er en form
                     Vi laver @PostMapping("/logind") i Controlleren for at lave et endpoint - pga. denne form -->
-                    <form id="login-form" action="/postLogIn" method="post">
-                        <h5 class="loginformheadline">Log ind</h5>
-                        <!--<input> Laver input-felt
-                        type="text" == typen af input der tages imod i inputfeltet
-                        id="brugernavn" == Kalder bestemt styling vi har i css-filen
-                        name="brugernavninput" == giver inputtet vi får ind referencenavnet, catfact -->
+                    <form id="login-form" action="/postCreateWasteList" method="post">
+                        <h5 class="loginformheadline">Vælg sortiment til lukkeliste</h5>
 
-                        <input type="text" id="username" name="usernameinput" placeholder="Brugernavn" required class="color"><br><br>
+                        th:for
+                        <p th:each="item : ${itemList}" class="twit">
 
-                        <input type="password" id="password" name="passwordinput" placeholder="Adgangskode" required  class="color"><br><br>
+                            <input type="checkbox" id="item" name="item" value="Bread">
+                            <label class="checkboxlabel" for="item">  </label><br>
 
-                        <a href="/createUser" class="createuser">Opret bruger</a>
 
-                        <input type="submit" value="Log ind" class="submit">
+                            <span th:text="${twit.getTwitTextWithCitation()}" class="twittext"></span><br>
+                            <span th:text="${twit.getAuthorWithAt()}" class="twitauthoranddate"> </span>
+                            <span th:text="${twit.getFormattedCreationDate()}" class="twitauthoranddate"> </span>
+                        </p>
+                        <!--
+                        <input type="checkbox" id="bread" name="bread" value="Bread">
+                        <label class="checkboxlabel" for="bread"> Franskbrød</label><br>
+
+                        <input type="checkbox" id="ryebread" name="ryebread" value="Ryebread">
+                        <label class="checkboxlabel"  for="ryebread"> Rugbrød</label><br>
+
+                        <input type="checkbox" id="spandauer" name="ryebread" value="Spandauer">
+                        <label class="checkboxlabel"  for="spandauer"> Spandauer</label><br>
+
+                        <input type="checkbox" id="cake" name="ryebread" value="Cake">
+                        <label class="checkboxlabel" for="cake"> Kajkage</label><br>
+
+                        <input type="checkbox" id="othellocake" name="othellocake" value="Othellocake">
+                        <label class="checkboxlabel" for="othellocake"> Othellolagkage</label><br>
+
+                        <input type="checkbox" id="rumcake" name="rumcake" value="Rumcake">
+                        <label class="checkboxlabel" for="rumcake"> Romkugle</label><br><br>
+                        -->
+
+                        <!-- HER SKAL DER INDSÆTTES INDTASTNINGFELT TIL FLERE VARER -->
+
+                        <a href="/frontPage" class="gotofrontpage">Udfyld senere</a>
+
+                        <input type="submit" value="Gem" class="submit">
+
                     </form>
                 </div>
             </div>
