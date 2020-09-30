@@ -98,12 +98,12 @@ public class KnowYourWasteController
     {
         ArrayList<String> stringList = new ArrayList<>();
         
-        stringList.add(dataCreateWasteListForm.getParameter("Bread"));
-        stringList.add(dataCreateWasteListForm.getParameter("Ryebread"));
-        stringList.add(dataCreateWasteListForm.getParameter("Spandauer"));
-        stringList.add(dataCreateWasteListForm.getParameter("Cake"));
-        stringList.add(dataCreateWasteListForm.getParameter("Othellocake"));
-        stringList.add(dataCreateWasteListForm.getParameter("Rumcake"));
+        stringList.add(dataCreateWasteListForm.getParameter("bread"));
+        stringList.add(dataCreateWasteListForm.getParameter("ryebread"));
+        stringList.add(dataCreateWasteListForm.getParameter("spandauer"));
+        stringList.add(dataCreateWasteListForm.getParameter("cake"));
+        stringList.add(dataCreateWasteListForm.getParameter("othellocake"));
+        stringList.add(dataCreateWasteListForm.getParameter("rumcake"));
         
         userManagerService.createWasteList(stringList);
         
