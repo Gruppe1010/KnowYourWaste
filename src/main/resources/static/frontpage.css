@@ -4,6 +4,11 @@ body
     font-family: 'Quicksand', serif;
 }
 
+.wrapper
+{
+    width: 100%;
+}
+
 .menubar
 {
     position: -webkit-sticky; /*Så sticky også virker i Safari*/
