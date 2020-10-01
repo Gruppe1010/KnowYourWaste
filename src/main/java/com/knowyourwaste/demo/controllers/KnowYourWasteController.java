@@ -124,8 +124,12 @@ public class    KnowYourWasteController
     {
         return "statistics"; // HTML
     }
-    
-    
+
+    @GetMapping("/wasteListConfirmation") // URL
+    public String wasteListConfirmation()
+    {
+        return "wastelistconfirmation";// HTML
+    }
     
     
 }
