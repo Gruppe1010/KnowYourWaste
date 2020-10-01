@@ -49,13 +49,13 @@ body
 
 a.linkmenubarheadlinewhite:link
 {
-    color: white;
+    color: ghostwhite;
     text-decoration: none;
 }
 
 a.linkmenubarheadlinewhite:visited
 {
-    color: white;
+    color: ghostwhite;
 }
 
 
@@ -72,7 +72,7 @@ a.linkmenubarheadline:visited
 
 a.linkmenubarheadline:hover
 {
-    color: white;
+    color: ghostwhite;
 }
 
 
@@ -96,7 +96,7 @@ a.linkmenubarheadlinelogout:visited
 
 a.linkmenubarheadlinelogout:hover
 {
-    color: white;
+    color: ghostwhite;
 }
 
 footer
