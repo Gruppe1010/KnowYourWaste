@@ -10,7 +10,7 @@ import org.springframework.web.context.request.WebRequest;
 import java.util.ArrayList;
 
 @Controller
-public class KnowYourWasteController
+public class    KnowYourWasteController
 {
     UserManagerService userManagerService = new UserManagerService(); //
     User loggedInUser = null;
