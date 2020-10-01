@@ -75,7 +75,6 @@ a.linkmenubarheadline:hover
 }
 
 
-
 .linkmenubarheadlinelogout
 {
     float: right;
@@ -183,7 +182,6 @@ a.footertext:hover
 .guidelinecontent
 {
     font-style: italic;
-
 }
 
 .fa-question-circle
@@ -194,7 +192,7 @@ a.footertext:hover
 .pagecontainer
 {
     position: relative;
-    /*100% af viewpoint height som muliggøre at den kan ændre sig afhængig af vinduets størrelse*/
+    /*100% af viewport height som muliggøre at den kan ændre sig afhængig af vinduets størrelse*/
     min-height: 100vh;
 }
 

@@ -1,0 +1,75 @@
+.graf-container
+{
+    padding-top:70px;
+    margin: auto;
+}
+
+.graf
+{
+    border: 3px solid;
+    border-radius: 15px;
+}
+
+.statguideline-container
+{
+    padding: 90px 70px 90px 0;
+    width: 350px;
+    margin: auto;
+}
+
+.statguidelineheadline
+{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.statguidelinecontent
+{
+    font-style: italic;
+}
+
+.table-container
+{
+    margin: 30px auto;
+    border: 3px solid;
+    border-radius: 15px;
+    width: 1110px;
+}
+
+table
+{
+    width:100%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+table, th, td
+{
+    border: 1px solid black;
+}
+
+th, td
+{
+    padding: 15px;
+    text-align: left;
+}
+
+.stattable tr:nth-child(even)
+{
+    background-color: white;
+}
+
+.stattable tr:nth-child(odd)
+{
+    background-color: #F0FEE8;
+}
+
+.stattable th
+{
+    background-color: #B6DFC0;
+    color: black;
+}
