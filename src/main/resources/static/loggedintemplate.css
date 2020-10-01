@@ -5,6 +5,15 @@ body
     font-family: 'Quicksand', serif;
 }
 
+.logo
+{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 650px;
+    margin: auto;
+}
+
 .logomountains
 {
     max-width: 100%;
