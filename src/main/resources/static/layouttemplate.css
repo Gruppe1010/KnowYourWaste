@@ -15,11 +15,6 @@ body
     margin: auto;
 }
 
-.logomountains
-{
-    max-width: 100%;
-}
-
 .white
 {
     color: white;
@@ -190,4 +185,9 @@ a.footertext:hover
 .fa-question-circle
 {
     color: seagreen;
+}
+
+.content
+{
+    min-height: calc(100vh - 156px);
 }
