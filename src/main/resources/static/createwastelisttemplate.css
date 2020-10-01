@@ -31,7 +31,7 @@ body
 
 }
 
-#login-form
+#createwastelisttemplate-form
 {
     background: rgba(255, 255, 255, 0.7);
     padding: 20px 30px 20px 30px;
@@ -40,7 +40,7 @@ body
     height: 420px;
 }
 
-.loginformheadline
+.createwastelisttemplateformheadline
 {
     font-size: 30px;
     text-align: center;
