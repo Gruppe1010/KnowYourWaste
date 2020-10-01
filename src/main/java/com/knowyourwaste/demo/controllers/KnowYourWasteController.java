@@ -41,7 +41,7 @@ public class    KnowYourWasteController
         if(user!=null)
         {
             loggedInUser = user;
-            return "redirect:/frontPage"; // HTML
+            return "redirect:/createWasteList"; // URL
         }
         
         // else - den er false
@@ -87,7 +87,7 @@ public class    KnowYourWasteController
         
          */ // SLET IKKE - Funktion til at den tjekker om password og bekræftpassword er ens
         
-        return "redirect:/createWasteListTemplate";
+        return "redirect:/createWasteListTemplate"; //URL
     }
     
     @GetMapping("/createWasteListTemplate") // URL
