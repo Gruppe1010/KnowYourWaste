@@ -164,3 +164,30 @@ a.footertext:hover
     float: right;
     right: 50px;
 }
+
+.guideline-container
+{
+    padding: 90px 30px 90px 30px;
+    width: 350px;
+    margin: auto;
+}
+
+.guidelineheadline
+{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.guidelinecontent
+{
+    font-style: italic;
+
+}
+
+.fa-question-circle
+{
+    color: seagreen;
+}

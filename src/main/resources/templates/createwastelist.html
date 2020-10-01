@@ -8,7 +8,7 @@
     <meta name="description" content="KnowYourWaste er en side for forretninger, der ønsker at mindske deres madspild"/>
 
     <!-- css-filer -->
-    <link href="/loggedintemplate.css" type="text/css" rel="stylesheet">
+    <link href="/layouttemplate.css" type="text/css" rel="stylesheet">
     <link href="/createwastelist.css" type="text/css" rel="stylesheet">
 
     <!-- bootstraaaaap -->
@@ -16,6 +16,9 @@
     <!--Font-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <!-- font-family: 'Quicksand', sans-serif; -->
+
+    <!--Icon-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
 <body>
@@ -34,37 +37,52 @@
 
 <div class="container font">
     <div class="row">
-        <!-- Kolonne til inputfelt -->
         <div class="col">
-            <div id="form-container">
-
+            <div class="form-container">
                 <form id="createwastelist-form" action="/postCreateWasteList" method="post">
                     <h5 class="createwastelistformheadline">Udfyld dagens lukkeliste</h5>
 
-                    <label for="bread">Franskbrød:</label>
+                    <label class="itemtext" for="bread">Franskbrød:</label>
 
-                    <input type="text" id="bread" name="breadinput" class="color"><br><br>
+                    <input type="text" id="bread" name="breadinput" placeholder="Antal" class="items"><br><br>
 
-                    <label for="ryebread">Rugbrød:</label>
+                    <label class="itemtext" for="ryebread">Rugbrød:</label>
 
-                    <input type="text" id="ryebread" name="ryebreadinput" class="color"><br><br>
+                    <input type="text" id="ryebread" name="ryebreadinput" placeholder="Antal" class="items"><br><br>
 
-                    <label for="spandauer">Spandauer:</label>
+                    <label class="itemtext" for="spandauer">Spandauer:</label>
 
-                    <input type="text" id="spandauer" name="spandauerinput" class="color"><br><br>
+                    <input type="text" id="spandauer" name="spandauerinput" placeholder="Antal" class="items"><br><br>
 
-                    <label for="cake">Kajkage:</label>
+                    <label class="itemtext" for="cake">Kajkage:</label>
 
-                    <input type="text" id="cake" name="cakeinput" class="color"><br><br>
+                    <input type="text" id="cake" name="cakeinput" placeholder="Antal" class="items"><br><br>
 
-                    <label for="othellocake">Othellolagkage:</label>
+                    <label class="itemtext" for="othellocake">Othellolagkage:</label>
 
-                    <input type="text" id="othellocake" name="othellocakeinput" class="color"><br><br>
+                    <input type="text" id="othellocake" name="othellocakeinput" placeholder="Antal" class="items"><br><br>
 
-                    <label for="rumcake">Romkugle:</label>
+                    <label class="itemtext" for="rumcake">Romkugle:</label>
 
-                    <input type="text" id="rumcake" name="rumcakeinput" class="color"><br><br>
+                    <input type="text" id="rumcake" name="rumcakeinput" placeholder="Antal" class="items"><br><br>
+
+                    <a href="/createWasteList" class="reset">Nulstil</a>
+
+                    <input type="submit" value="Gem" class="submit">
                 </form>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="guideline-container">
+
+                <h5 class="guidelineheadline">Vejledning&nbsp;<i class="fas fa-question-circle"></i></h5>
+
+                <p class="guidelinecontent">På denne side kan du oprette dagens lukkeliste</p>
+                <p class="guidelinecontent">I tekstfeltet ud for varens navn indtastes antallet af bagværk der smides ud</p>
+                <p class="guidelinecontent">Når din liste er udfyldt klikker du på "gem" knappen nederst på siden</p>
+                <p class="guidelinecontent">Du kan altid gå tilbage og redigere listen efter du har trykket "gem"</p>
+                <p class="guidelinecontent">Ved at trykke "nulstil" slettes alle indtastninger</p>
 
             </div>
         </div>

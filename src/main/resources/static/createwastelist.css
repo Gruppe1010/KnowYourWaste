@@ -1,6 +1,7 @@
-#form-container
+.form-container
 {
     padding-top:70px;
+    padding-bottom: 70px;
     width: 500px;
     margin: auto;
 }
@@ -11,7 +12,7 @@
     padding: 20px 30px 20px 30px;
     border: 3px solid;
     border-radius: 15px;
-    height: 310px;
+    height: 500px;
 }
 
 .createwastelistformheadline
@@ -21,15 +22,74 @@
     padding-bottom: 20px;
 }
 
-#bread
+.items
 {
-    position: relative;
-    width: 100%;
-
+    width: 270px;
+    background-color: #F0FEE8;
     border-color: black;
     border-radius: 5px; /*For afrundede kanter på border*/
 
     font-size: 15px;
     line-height: 40px; /*For luft om bogstaver*/
     padding-left: 10px; /*For luft om bogstaver*/
+    float: right;
+    margin-bottom: 5px;
+}
+
+.itemtext
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.submit
+{
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+input[type=submit]
+{
+    background-color: #F0FEE8;
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.reset
+{
+    position: relative;
+    display: inline;
+    float: left;
+
+    background-color: #D1CDCD;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 4px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+a.reset:link
+{
+    color: black;
+    border-color: black;
+    text-decoration: none;
+}
+a.reset:hover
+{
+    background-color: #BCBDBC;
+}
+a.reset:visited
+{
+    color: black;
 }
