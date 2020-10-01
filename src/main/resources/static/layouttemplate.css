@@ -1,7 +1,11 @@
 body
 {
     margin: 0;
-    background-image: url("https://i.imgur.com/iFOwF0k.png");
+    background-image: url("https://i.imgur.com/q9sNJ39.png");
+    /*Så billdet ikke gentager sig*/
+    background-repeat: no-repeat;
+    /*Ændre størrelsen så den passer til siden*/
+    background-size: cover;
     font-family: 'Quicksand', serif;
     min-height: 100%;
 }
@@ -187,7 +191,23 @@ a.footertext:hover
     color: seagreen;
 }
 
+.pagecontainer
+{
+    position: relative;
+    /*100% af viewpoint height som muliggøre at den kan ændre sig afhængig af vinduets størrelse*/
+    min-height: 100vh;
+}
+
 .content
 {
-    min-height: calc(100vh - 156px);
+    /*Skal være samme højde som footer*/
+    padding-bottom: 70px;
 }
+
+/*The page-container goes around everything on the page, and sets its minimum height to 100% of the viewport height (vh).
+As it is relative, its child elements can be set with absolute position based on it later.
+The content-wrap has a bottom padding that is the height of the footer, ensuring that exactly enough space is left for the footer inside the container they are both in.
+A wrapping div is used here that would contain all other page content.
+The footer is set to absolute, sticking to the bottom: 0 of the page-container it is within.
+This is important, as it is not absolute to the viewport, but will move down if the page-container is taller than the viewport.
+As stated, its height, arbitrarily set to 2.5rem here, is used in the content-wrap above it.*/
