@@ -32,16 +32,39 @@
     <span class="menubarheadline"><a class="linkmenubarheadlinelogout" href="/"> Log ud</a></span>
 </div>
 
-<p>
-    Hek ehjehkjfhskjhfs <br> hjke <br> hekheljlkj
-</p>
 <div class="container font">
     <div class="row">
         <!-- Kolonne til inputfelt -->
         <div class="col">
             <div id="form-container">
 
+                <form id="createwastelist-form" action="/postCreateWasteList" method="post">
+                    <h5 class="createwastelistformheadline">Udfyld dagens lukkeliste</h5>
 
+                    <label for="bread">Franskbrød:</label>
+
+                    <input type="text" id="bread" name="breadinput" class="color"><br><br>
+
+                    <label for="ryebread">Rugbrød:</label>
+
+                    <input type="text" id="ryebread" name="ryebreadinput" class="color"><br><br>
+
+                    <label for="spandauer">Spandauer:</label>
+
+                    <input type="text" id="spandauer" name="spandauerinput" class="color"><br><br>
+
+                    <label for="cake">Kajkage:</label>
+
+                    <input type="text" id="cake" name="cakeinput" class="color"><br><br>
+
+                    <label for="othellocake">Othellolagkage:</label>
+
+                    <input type="text" id="othellocake" name="othellocakeinput" class="color"><br><br>
+
+                    <label for="rumcake">Romkugle:</label>
+
+                    <input type="text" id="rumcake" name="rumcakeinput" class="color"><br><br>
+                </form>
 
             </div>
         </div>

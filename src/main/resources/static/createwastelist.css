@@ -1,0 +1,35 @@
+#form-container
+{
+    padding-top:70px;
+    width: 500px;
+    margin: auto;
+}
+
+#createwastelist-form
+{
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 30px 20px 30px;
+    border: 3px solid;
+    border-radius: 15px;
+    height: 310px;
+}
+
+.createwastelistformheadline
+{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#bread
+{
+    position: relative;
+    width: 100%;
+
+    border-color: black;
+    border-radius: 5px; /*For afrundede kanter på border*/
+
+    font-size: 15px;
+    line-height: 40px; /*For luft om bogstaver*/
+    padding-left: 10px; /*For luft om bogstaver*/
+}
