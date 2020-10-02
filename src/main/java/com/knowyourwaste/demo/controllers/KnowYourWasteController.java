@@ -87,16 +87,16 @@ public class    KnowYourWasteController
     }
     
     @PostMapping("/postCreateWasteListTemplate") // form-action
-    public String postCreateWasteList(WebRequest dataCreateWasteListForm)
+    public String postCreateWasteListTemplate(WebRequest dataFromCreateWasteListTemplateForm)
     {
         ArrayList<String> stringList = new ArrayList<>();
         
-        stringList.add(dataCreateWasteListForm.getParameter("bread"));
-        stringList.add(dataCreateWasteListForm.getParameter("ryebread"));
-        stringList.add(dataCreateWasteListForm.getParameter("spandauer"));
-        stringList.add(dataCreateWasteListForm.getParameter("cake"));
-        stringList.add(dataCreateWasteListForm.getParameter("othellocake"));
-        stringList.add(dataCreateWasteListForm.getParameter("rumcake"));
+        stringList.add(dataFromCreateWasteListTemplateForm.getParameter("bread"));
+        stringList.add(dataFromCreateWasteListTemplateForm.getParameter("ryebread"));
+        stringList.add(dataFromCreateWasteListTemplateForm.getParameter("spandauer"));
+        stringList.add(dataFromCreateWasteListTemplateForm.getParameter("cake"));
+        stringList.add(dataFromCreateWasteListTemplateForm.getParameter("othellocake"));
+        stringList.add(dataFromCreateWasteListTemplateForm.getParameter("rumcake"));
         
         userManagerService.createWasteList(stringList);
         
@@ -119,6 +119,12 @@ public class    KnowYourWasteController
     public String wasteListConfirmation()
     {
         return "wastelistconfirmation";// HTML
+    }
+
+    @PostMapping("/postWasteListConfirmation")
+    public String postWasteListConfirmation(WebRequest dataFromWasteListForm)
+    {
+        return "redirect:/wasteListConfirmation"; //HTML
     }
     
     
