@@ -25,16 +25,6 @@ public class    KnowYourWasteController
     @PostMapping("/postLogIn") // form-action
     public String postLogIn(WebRequest dataFromLogInForm)
     {
-        /* tjek om data fra twitform stemmer overens med Arraylisten userList
-        
-        checkIfUserExists()
-        
-        Lav måske noget do-while og så noget try catch inde i den?
-        
-        return "frontpage"; //
-        
-         */
-    
         User user = userManagerService.checkLogInInfo(dataFromLogInForm.getParameter("usernameinput"),
                 dataFromLogInForm.getParameter("passwordinput"));
         
