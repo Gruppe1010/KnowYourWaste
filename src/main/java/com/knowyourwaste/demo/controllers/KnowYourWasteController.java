@@ -10,7 +10,7 @@ import org.springframework.web.context.request.WebRequest;
 import java.util.ArrayList;
 
 @Controller
-public class    KnowYourWasteController
+public class KnowYourWasteController
 {
     UserManagerService userManagerService = new UserManagerService(); //
     User loggedInUser = null;
@@ -42,7 +42,7 @@ public class    KnowYourWasteController
     {
         return "frontpage"; // HTML
     }
-    
+
     @GetMapping("/createUser") // URL
     public String createUser()
     {
@@ -124,7 +124,7 @@ public class    KnowYourWasteController
     @PostMapping("/postWasteListConfirmation")
     public String postWasteListConfirmation(WebRequest dataFromWasteListForm)
     {
-        return "redirect:/wasteListConfirmation"; //HTML
+        return "redirect:/wasteListConfirmation"; //URL
     }
     
     
