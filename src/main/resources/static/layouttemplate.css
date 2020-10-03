@@ -202,6 +202,16 @@ a.footertext:hover
     padding-bottom: 70px;
 }
 
+.seagreen
+{
+    color: seagreen;
+}
+
+.size
+{
+    font-size: 25px;
+}
+
 /*The page-container goes around everything on the page, and sets its minimum height to 100% of the viewport height (vh).
 As it is relative, its child elements can be set with absolute position based on it later.
 The content-wrap has a bottom padding that is the height of the footer, ensuring that exactly enough space is left for the footer inside the container they are both in.
